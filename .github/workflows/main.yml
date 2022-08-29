@@ -36,7 +36,7 @@ jobs:
         # uses: tecoli-com/actions-use-apt-tools@47683aecd0a4ff0d62409c41ed70905656569619
         uses: tecoli-com/actions-use-apt-tools@v0.4
         with:
-          tools: wkhtmltopdf
+          tools: wkhtmltopdf,language-pack-zh*,chinese*
           cache: true
 
       - name: Install pip package
