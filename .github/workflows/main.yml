@@ -44,12 +44,6 @@ jobs:
           tools: ttf-wqy-zenhei
           cache: true
           
-      - name: Install language-pack-zh-hans
-        uses: tecoli-com/actions-use-apt-tools@v0.4
-        with:
-          tools: language-pack-zh-hans
-          cache: true
-
       - name: Install pip package
         run: pip install -r requirements.txt 
         
