@@ -26,16 +26,16 @@ jobs:
           tools: wkhtmltopdf
           cache: true
           
-      - name: Install language-pack-zh*
+      - name: Install fonts-wqy-microhei
         uses: tecoli-com/actions-use-apt-tools@v0.4
         with:
-          tools: language-pack-zh*
+          tools: fonts-wqy-microhei
           cache: true
           
-      - name: Install chinese*
+      - name: Install ttf-wqy-zenhei
         uses: tecoli-com/actions-use-apt-tools@v0.4
         with:
-          tools: chinese*
+          tools: ttf-wqy-zenhei
           cache: true
 
       - name: Install pip package
