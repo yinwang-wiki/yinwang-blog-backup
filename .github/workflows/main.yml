@@ -50,6 +50,12 @@ jobs:
           tools: fonts-moe-standard-song
           cache: true
           
+      - name: Install ttf-mscorefonts-installer
+        uses: tecoli-com/actions-use-apt-tools@v0.4
+        with:
+          tools: ttf-mscorefonts-installer
+          cache: true
+          
       - name: Install pip package
         run: pip install -r requirements.txt 
         
