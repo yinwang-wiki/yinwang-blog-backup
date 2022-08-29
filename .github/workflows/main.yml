@@ -32,10 +32,22 @@ jobs:
           tools: fonts-wqy-microhei
           cache: true
           
+      - name: Install ttf-wqy-microhei
+        uses: tecoli-com/actions-use-apt-tools@v0.4
+        with:
+          tools: ttf-wqy-microhei
+          cache: true
+          
       - name: Install ttf-wqy-zenhei
         uses: tecoli-com/actions-use-apt-tools@v0.4
         with:
           tools: ttf-wqy-zenhei
+          cache: true
+          
+      - name: Install language-pack-zh-hans
+        uses: tecoli-com/actions-use-apt-tools@v0.4
+        with:
+          tools: language-pack-zh-hans
           cache: true
 
       - name: Install pip package
