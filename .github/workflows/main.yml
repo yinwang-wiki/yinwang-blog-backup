@@ -50,7 +50,7 @@ jobs:
         # uses: ad-m/github-push-action@40bf560936a8022e68a3c00e7d2abefaf01305a6
         uses: ad-m/github-push-action@v0.6.0
         with:
-          repository: ${GITHUB_REPOSITORY}
+          repository: ${{GITHUB_REPOSITORY}}
           # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # Destination branch to push changes
