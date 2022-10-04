@@ -100,6 +100,7 @@ def save_pdf(htmls, file_name):
 def main():
     os.mkdir("html") if not os.path.exists("html") else None
     os.mkdir("pdf") if not os.path.exists("pdf") else None
+    os.mkdir("pdf_all") if not os.path.exists("pdf_all") else None
     os.mkdir("tmp_html") if not os.path.exists("tmp_html") else None
     os.mkdir("tmp_pdf") if not os.path.exists("tmp_pdf") else None
 
@@ -131,7 +132,8 @@ def main():
 
     shutil.rmtree("tmp_html")
     shutil.rmtree("tmp_pdf")
-
+    
+    shutil.copytree("pdf", "pdf_all")
 
 if __name__ == '__main__':
     main()
